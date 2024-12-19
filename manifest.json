@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Website Blocker",
+    "version": "1.0",
+    "description": "Blocks distracting websites for productivity.",
+    "permissions": ["storage","declarativeNetRequest"],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "action": {
+      "default_popup": "extension_view.html"
+    },
+    "options_page": "extension_view.html",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+    "service_worker": "background.js"
+  }
+  }

@@ -1,0 +1,54 @@
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=.2">
+    <title>Productivity Blocker settings</title>
+    <style>
+      body{
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 20px;
+      }
+      .container {
+        max-width: 6000px;
+        margin: auto; 
+        text-align: center;
+      }
+      input, button {
+        padding: 10px;
+        margin: 10px;
+        width: 80%;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        background: #e50d0d;
+        margin: 5px 0;
+        padding: 10px;
+        border:1px #ee1313 solid;
+        text-align: left;
+      }
+      li button {
+        float: right;
+        color: red; 
+        border: none; 
+        background: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Productivity site Blocker settings</h1>
+      <form id="blockForm">
+        <input type="text" id="websiteInput" placeholder="Enter site to block">
+        <button type="submit">Block site</button>
+      </form>
+      <ul id="blockList"></ul>
+    </div>
+    <script src="content.js"></script>
+  </body>
+  </html>
+
